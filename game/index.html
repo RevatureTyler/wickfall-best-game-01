@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wickfall</title>
+  <style>
+    :root { color-scheme: dark; }
+    html, body { margin: 0; height: 100%; background: #070611; }
+    body { display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    canvas {
+      display: block;
+      width: min(100vw, calc(100vh * 1.6));
+      height: auto;
+      touch-action: none;
+      cursor: crosshair;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="960" height="600" aria-label="Wickfall: gather the embers, dodge the shadow wisps"></canvas>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
